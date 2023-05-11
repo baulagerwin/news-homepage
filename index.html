@@ -17,7 +17,45 @@
     <title>News Homepage</title>
   </head>
   <body>
-    <main class="main-grid">
+    <nav>
+      <div class="nav-elements">
+        <a class="nav-logo" href="/">
+          <img
+            class="nav-logo"
+            src="./assets/images/logo.svg"
+            alt="Logo of the Website"
+          />
+        </a>
+        <label for="nav-menu-checkbox">
+          <img
+            class="nav-menu"
+            src="./assets/images/icon-menu.svg"
+            alt="Mobile Menu of the Website"
+          />
+        </label>
+        <input
+          class="nav-menu-checkbox"
+          type="checkbox"
+          id="nav-menu-checkbox"
+        />
+        <div class="nav-overlay"></div>
+        <div class="nav-links">
+          <label for="nav-menu-checkbox">
+            <img
+              class="nav-close"
+              src="./assets/images/icon-menu-close.svg"
+              alt="Close Menu of the Website"
+            />
+          </label>
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#new">New</a>
+          <a class="nav-link" href="#popular">Popular</a>
+          <a class="nav-link" href="#trending">Trending</a>
+          <a class="nav-link" href="#categories">Categories</a>
+        </div>
+      </div>
+    </nav>
+    <main>
       <header>
         <figure class="span-to-the-end">
           <picture>
@@ -44,7 +82,7 @@
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <a href="#" class="header-btn">Read more</a>
+            <a href="#read-more" class="header-btn">Read more</a>
           </div>
         </figcaption>
       </header>

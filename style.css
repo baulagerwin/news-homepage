@@ -45,9 +45,17 @@ p {
 }
 
 /* Layouts */
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 8rem;
+  background-color: var(--off-white);
+}
+
 main {
+  padding: 10rem 0rem;
   max-width: 111rem;
-  margin: 2rem auto;
+  margin: 0rem auto;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -80,7 +88,7 @@ h1 {
   font-size: 6rem;
   font-weight: 800;
   margin: 0;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
   line-height: 1;
   color: var(--dark-blue);
 }
@@ -112,6 +120,46 @@ h4 {
 }
 
 /* Styles */
+.nav-elements {
+  max-width: 111rem;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-right: auto;
+}
+
+.nav-menu-checkbox {
+  display: none;
+}
+
+.nav-overlay {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
+
 .header-img {
   width: 100%;
   height: 100%;
@@ -201,8 +249,12 @@ aside {
 
 /* Media queries */
 @media (max-width: 1110px) {
-  main {
+  .nav-elements {
     padding: 0 2rem;
+  }
+
+  main {
+    padding: 10rem 2rem;
   }
 }
 
@@ -239,6 +291,10 @@ aside {
 }
 
 @media (max-width: 768px) {
+  .nav-logo {
+    height: 2.8rem;
+  }
+
   .header-caption {
     grid-template-columns: 1fr;
     gap: 0;
@@ -254,6 +310,60 @@ aside {
 }
 
 @media (max-width: 576px) {
+  .nav-elements {
+    position: relative;
+  }
+
+  .nav-close {
+    display: inline-block;
+    height: 2.8rem;
+    width: 2.8rem;
+    position: absolute;
+    top: 2.6rem;
+    right: calc(0% + 2rem);
+  }
+
+  .nav-overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    /* left: 35vw; */
+    height: 100vh;
+    width: 65vw;
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 2rem;
+    background-color: var(--off-white);
+    transition: left 0.3s linear;
+  }
+
+  #nav-menu-checkbox:checked + .nav-overlay {
+    display: block;
+  }
+
+  #nav-menu-checkbox:checked ~ .nav-links {
+    left: 35vw;
+  }
+
+  .nav-link {
+    font-size: 1.8rem;
+    transform: translateY(-14rem);
+  }
+
+  .nav-menu {
+    display: block;
+  }
+
   main {
     grid-template-columns: 1fr;
     gap: 0;
