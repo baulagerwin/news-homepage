@@ -226,6 +226,22 @@ aside {
   gap: 2rem;
 }
 
+.aside-link:link,
+.aside-link:visited {
+  text-decoration: none;
+  color: var(--off-white);
+}
+
+.aside-link:link h3,
+.aside-link:visited h3 {
+  transition: color 0.2s linear;
+}
+
+.aside-link:hover h3,
+.aside-link:active h3 {
+  color: var(--soft-orange);
+}
+
 .aside-body li {
   display: flex;
   flex-direction: column;
