@@ -16,7 +16,7 @@
 
 ## Overview
 
-This news homepage will be an excellent opportunity to practice your CSS Grid skills. There will be lots of tricky decisions to make and plenty of learning opportunities!
+Visit a tech news homepage for the latest updates on tech news, product launches, and expert analysis. Stay informed and ahead of the curve in this fast-paced industry!
 
 ### The challenge
 
@@ -31,19 +31,19 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://news-homepage-fm-challenge.netlify.app/)
+- Live Site URL: [News Homepage](https://news-homepage-fm-challenge.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - HTML5
-- CSS3
+- CSS3 (CSS Grid)
 
 ### What I learned
 
 - Semantic HTML
-- Using compressed fonts such as WOFF and WOFF 2.0 to minimize FOUT or FOIT and maximize initial load speed.
+- Using compressed fonts to minimize FOUT or FOIT and maximize initial load speed.
 - Art Direction
 
 ```html
