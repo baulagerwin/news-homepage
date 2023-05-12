@@ -390,7 +390,7 @@ aside {
     justify-content: center;
     padding: 0rem 2rem;
     background-color: var(--off-white);
-    transition: left 0.3s linear;
+    transition: left 1s ease;
   }
 
   #nav-menu-checkbox:checked + .nav-overlay {
@@ -401,7 +401,8 @@ aside {
     left: 35vw;
   }
 
-  .nav-link {
+  .nav-link:link,
+  .nav-link:visited {
     font-size: 1.8rem;
     transform: translateY(-14rem);
   }
