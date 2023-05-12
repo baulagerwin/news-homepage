@@ -417,6 +417,10 @@ aside {
     row-gap: 4rem;
   }
 
+  h1 {
+    margin-bottom: 1rem;
+  }
+
   article {
     grid-template-columns: 1fr;
   }
