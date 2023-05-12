@@ -35,6 +35,8 @@ Users should be able to:
 
 ## My process
 
+I usually start by breaking it into parts(components). I started creating the main content. Layouting it with CSS Grid. Create and put each of its component. Make it responsive. Then I move the navbar. Layouting it with flexbox. Create and put each of its component. Make it responsive.
+
 ### Built with
 
 - HTML5
@@ -86,4 +88,4 @@ In the future projects, I want to create a website with mobile-first approach.
 
 ## Acknowledgments
 
-I wanna thank fontsquirrel for free fonts [Check em out!](https://www.fontsquirrel.com/)
+I wanna thank fontsquirrel for free fonts. [Check em out!](https://www.fontsquirrel.com/)
