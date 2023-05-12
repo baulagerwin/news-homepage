@@ -145,11 +145,18 @@ h4 {
   gap: 4rem;
 }
 
-.nav-link {
+.nav-link:link,
+.nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--dark-blue);
+  transition: color 0.2s linear;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--soft-red);
 }
 
 .nav-close {
@@ -183,7 +190,8 @@ h4 {
   line-height: 1.8;
 }
 
-.header-btn {
+.header-btn:link,
+.header-btn:visited {
   display: inline-block;
   padding: 1.5rem 3rem;
   text-decoration: none;
@@ -193,6 +201,12 @@ h4 {
   letter-spacing: 6px;
   font-size: 1.4rem;
   font-weight: 700;
+  transition: background-color 0.2s linear;
+}
+
+.header-btn:hover,
+.header-btn:active {
+  background-color: var(--dark-blue);
 }
 
 aside {
@@ -224,6 +238,22 @@ aside {
 .aside-body li p {
   line-height: 1.8;
   margin-bottom: 2rem;
+}
+
+.article-link:link,
+.article-link:visited {
+  text-decoration: none;
+  color: initial;
+}
+
+.article-link:link h4,
+.article-link:visited h4 {
+  transition: color 0.2s linear;
+}
+
+.article-link:hover h4,
+.article-link:active h4 {
+  color: var(--soft-red);
 }
 
 .article-item {
