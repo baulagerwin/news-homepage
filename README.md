@@ -80,7 +80,7 @@ In the future projects, I want to create a website with mobile-first approach.
 
 ### Useful resources
 
-- [Checkbox Trick](https://www.youtube.com/watch?v=xMTs8tAapnQ&t=582s&ab_channel=CalerEdwards) - This helped me toggle the sidebar without the help of JavaScript
+- [Checkbox Trick](https://www.youtube.com/watch?v=xMTs8tAapnQ&t=582s&ab_channel=CalerEdwards) - This helped me toggle the sidebar.
 
 ## Author
 
