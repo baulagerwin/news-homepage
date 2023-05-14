@@ -53,7 +53,7 @@ nav {
 }
 
 main {
-  padding: 10rem 0rem;
+  padding: 12rem 0rem;
   max-width: 111rem;
   margin: 0rem auto;
 
@@ -65,7 +65,9 @@ main {
 
 header {
   grid-column: 1 / span 2;
+}
 
+header figure {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 30rem 1fr;
@@ -150,7 +152,7 @@ h4 {
   display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
-  color: var(--dark-blue);
+  color: var(--dark-grayish-blue);
   transition: color 0.2s linear;
 }
 
